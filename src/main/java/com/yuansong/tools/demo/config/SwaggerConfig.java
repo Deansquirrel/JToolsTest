@@ -9,32 +9,27 @@ public class SwaggerConfig implements ISwaggerConfig {
 
 	@Override
 	public Boolean getEnable() {
-		// TODO Auto-generated method stub
-		return null;
+		return true;
 	}
 
 	@Override
 	public String getTitle() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Title";
 	}
 
 	@Override
 	public String getDescription() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Description";
 	}
 
 	@Override
 	public String getVersion() {
-		// TODO Auto-generated method stub
-		return null;
+		return "0.0.0";
 	}
 
 	@Override
 	public String getBasePackage() {
-		// TODO Auto-generated method stub
-		return null;
+		return "com.yuansong";
 	}
 
 }
