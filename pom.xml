@@ -30,7 +30,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
@@ -43,25 +43,16 @@
 			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.yuansong.tools</groupId>
-			<artifactId>tools-http</artifactId>
-			<version>0.0.5</version>
-		</dependency>
-		<dependency>
-			<groupId>com.yuansong.tools</groupId>
+			<groupId>com.github.deansquirrel</groupId>
 			<artifactId>tools-common</artifactId>
-			<version>0.0.4</version>
-		</dependency>
-		<dependency>
-			<groupId>com.yuansong.tools</groupId>
-			<artifactId>tools-secret</artifactId>
 			<version>0.0.2</version>
 		</dependency>
-		<dependency>
-			<groupId>com.yuansong.tools</groupId>
-			<artifactId>tools-swagger</artifactId>
-			<version>0.0.0</version>
-		</dependency>
+		<!-- <dependency> <groupId>com.yuansong.tools</groupId> <artifactId>tools-http</artifactId> 
+			<version>0.0.5</version> </dependency> <dependency> <groupId>com.yuansong.tools</groupId> 
+			<artifactId>tools-common</artifactId> <version>0.0.4</version> </dependency> 
+			<dependency> <groupId>com.yuansong.tools</groupId> <artifactId>tools-secret</artifactId> 
+			<version>0.0.2</version> </dependency> <dependency> <groupId>com.yuansong.tools</groupId> 
+			<artifactId>tools-swagger</artifactId> <version>0.0.0</version> </dependency> -->
 	</dependencies>
 
 	<build>
