@@ -16,8 +16,6 @@ public class DemoTask {
 	
 	private static final Logger logger = LoggerFactory.getLogger(DemoTask.class);
 	
-	private static boolean sFlag = false;
-	
 	@Autowired
 	private MyTestJob myTestJob;
 	
@@ -30,21 +28,35 @@ public class DemoTask {
 //	@Autowired
 //	private SwaggerConfig swaggerConfig;
 	
-	@Scheduled(initialDelay=1000L * 5, fixedDelay=1000L * 10)
-	public void toolTest() {
-		logger.debug("tool test begin");
-		logger.debug(CommonTool.UUID());
-//		
-//		logger.debug(String.valueOf(swaggerConfig.getEnable()));
-//		logger.debug(swaggerConfig.getTitle());
-//		logger.debug(swaggerConfig.getDescription());
-//		logger.debug(swaggerConfig.getVersion());
-		if(!sFlag) {
-			myTestJob.startThread(500L);
-			sFlag = true;
+	@Scheduled(initialDelay=1000L * 2, fixedDelay=1000L * 5)
+	public void toolTest1() {
+		logger.debug("1-" + CommonTool.UUID());
+		try {
+			Thread.sleep(10000L);
+		} catch (InterruptedException e) {
 		}
-//		
-		logger.debug("tool test end");
+		myTestJob.startMyJob();
 	}
+	
+	@Scheduled(initialDelay=1000L * 3, fixedDelay=1000L * 5)
+	public void toolTest2() {
+		logger.debug("2-" + CommonTool.UUID());
+		try {
+			Thread.sleep(10000L);
+		} catch (InterruptedException e) {
+		}
+		myTestJob.startMyJob();
+	}
+	
+	@Scheduled(initialDelay=1000L * 4, fixedDelay=1000L * 5)
+	public void toolTest3() {
+		logger.debug("3-" + CommonTool.UUID());
+		try {
+			Thread.sleep(10000L);
+		} catch (InterruptedException e) {
+		}
+		myTestJob.startMyJob();
+	}
+	
 }
 
