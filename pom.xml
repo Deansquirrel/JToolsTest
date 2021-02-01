@@ -14,10 +14,22 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<github.global.server>github</github.global.server>
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>deansquirrel-maven-repo-release</id>
+			<url>https://raw.gitee.com/deansquirrel/maven-jrepository/master</url>
+		</repository>
+		<repository>
+			<id>clojars</id>
+			<url>http://clojars.org/repo/</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
@@ -27,11 +39,38 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.github.deansquirrel</groupId>
 			<artifactId>tools-common</artifactId>
+			<version>0.0.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yuansong.tools</groupId>
+			<artifactId>tools-task</artifactId>
+			<version>0.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yuansong.tools</groupId>
+			<artifactId>tools-db</artifactId>
+			<version>0.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.yuansong.tools</groupId>
+			<artifactId>tools-swagger</artifactId>
 			<version>0.0.2</version>
 		</dependency>
 	</dependencies>
