@@ -60,13 +60,13 @@
 		<dependency>
 			<groupId>com.yuansong.tools</groupId>
 			<artifactId>tools-task</artifactId>
-			<version>0.0.0</version>
+			<version>0.0.2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.yuansong.tools</groupId>
 			<artifactId>tools-db</artifactId>
-			<version>0.0.0</version>
+			<version>0.0.4</version>
 		</dependency>
 		<dependency>
 			<groupId>com.yuansong.tools</groupId>
@@ -76,7 +76,7 @@
 		<dependency>
 			<groupId>com.yuansong.tools</groupId>
 			<artifactId>tools-config</artifactId>
-			<version>0.0.0</version>
+			<version>0.0.4</version>
 		</dependency>
 	</dependencies>
 	<build>
