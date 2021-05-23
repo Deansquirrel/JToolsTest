@@ -1,4 +1,4 @@
-package com.yuansong.tools.demo.config;
+package com.yuansong.tools.demo.feature;
 
 import org.springframework.stereotype.Component;
 

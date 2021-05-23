@@ -39,9 +39,28 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
+			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
 		
+		<dependency>
+			<groupId>com.yuansong.tools</groupId>
+			<artifactId>tools-swagger</artifactId>
+			<version>0.0.3</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.yuansong.tools</groupId>
+			<artifactId>tools-secret</artifactId>
+			<version>0.0.3</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.yuansong.tools</groupId>
+			<artifactId>tools-db</artifactId>
+			<version>0.0.5</version>
+		</dependency>
+		
+		<!-- 
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
@@ -49,8 +68,9 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-log4j2</artifactId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.github.deansquirrel</groupId>
 			<artifactId>tools-common</artifactId>
@@ -68,16 +88,13 @@
 			<artifactId>tools-db</artifactId>
 			<version>0.0.4</version>
 		</dependency>
-		<dependency>
-			<groupId>com.yuansong.tools</groupId>
-			<artifactId>tools-swagger</artifactId>
-			<version>0.0.2</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>com.yuansong.tools</groupId>
 			<artifactId>tools-config</artifactId>
 			<version>0.0.4</version>
 		</dependency>
+		 -->
 	</dependencies>
 	<build>
 		<plugins>

@@ -1,4 +1,4 @@
-package com.yuansong.tools.demo.config;
+package com.yuansong.tools.demo.feature;
 
 //@Configuration
 //public class ScheduledConfig implements SchedulingConfigurer {
