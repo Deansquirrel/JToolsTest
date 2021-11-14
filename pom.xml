@@ -20,7 +20,18 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
 
 		<dependency>
@@ -32,11 +43,16 @@
 		<dependency>
 			<groupId>com.github.deansquirrel</groupId>
 			<artifactId>tools-common</artifactId>
-			<version>0.0.3</version>
+			<version>0.0.4</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.deansquirrel</groupId>
 			<artifactId>tools-secret</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.deansquirrel</groupId>
+			<artifactId>tools-swagger</artifactId>
 			<version>0.0.1</version>
 		</dependency>
 	</dependencies>
