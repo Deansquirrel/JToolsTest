@@ -1,5 +1,6 @@
 package com.yuansong.tools.controller;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import com.github.deansquirrel.tools.common.SQLTool;
 import com.github.deansquirrel.tools.db.DynamicRoutingDataSource;
 import com.github.deansquirrel.tools.db.IToolsDbHelper;
@@ -52,7 +53,9 @@ public class DbController {
                 .setUserName("LKqfry9MiU")
                 .setPassword("iQBFdqvYmW");
 
-        iToolsDbHelper.addDataSource(mySqlConnHelper.getName(), mySqlConnHelper.getDataSource());
+        DruidDataSource dataSource = mySqlConnHelper.getDataSource();
+        iToolsDbHelper.setSourceAttributes(dataSource);
+        iToolsDbHelper.addDataSource(mySqlConnHelper.getName(), mySqlConnHelper.getDataSource(), IToolsDbHelper.DEFAULT_QUERY_TIMEOUT, 1);
         dynamicRoutingDataSource.setDataSourceKey(mySqlConnHelper.getName());
 
         List<String> nameList = this.jdbcTemplate.query("select `name` from TbStudent;", new RowMapper<String>() {
@@ -70,6 +73,7 @@ public class DbController {
                 logger.debug(stuName);
             }
         }
+
         return Response.makeOKResp();
     }
 }

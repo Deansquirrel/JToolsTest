@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>com.github.deansquirrel</groupId>
 			<artifactId>tools-db-mysql</artifactId>
-			<version>0.0.0</version>
+			<version>0.0.2</version>
 		</dependency>
 	</dependencies>
 
